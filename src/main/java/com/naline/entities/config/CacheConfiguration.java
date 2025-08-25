@@ -46,6 +46,14 @@ public class CacheConfiguration {
             createCache(cm, com.naline.entities.domain.User.class.getName());
             createCache(cm, com.naline.entities.domain.Authority.class.getName());
             createCache(cm, com.naline.entities.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.naline.entities.domain.Product.class.getName());
+            createCache(cm, com.naline.entities.domain.ProductCategory.class.getName());
+            createCache(cm, com.naline.entities.domain.ProductCategory.class.getName() + ".products");
+            createCache(cm, com.naline.entities.domain.CustomerDetails.class.getName());
+            createCache(cm, com.naline.entities.domain.CustomerDetails.class.getName() + ".carts");
+            createCache(cm, com.naline.entities.domain.ShoppingCart.class.getName());
+            createCache(cm, com.naline.entities.domain.ShoppingCart.class.getName() + ".orders");
+            createCache(cm, com.naline.entities.domain.ProductOrder.class.getName());
             // jhipster-needle-caffeine-add-entry
         };
     }
